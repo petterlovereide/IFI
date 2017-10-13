@@ -1,0 +1,5 @@
+3
+
+1   Build-walls		4 2       2       0
+2   Build-roofs		6 4       0
+3   Put-on-wallpapers	1 2       1       0
