@@ -1,0 +1,6 @@
+class ReseptIterator implements Iterator{
+
+
+
+
+}
