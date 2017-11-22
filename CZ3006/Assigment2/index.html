@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fruit Shop</title>
+</head>
+<body>
+
+<form action="submit.php" method="post"  id="form" name="form">
+  User Name: <input type="text" id="username" name="username"/>
+  <table cellspacing="10">
+  <tr>
+    <td>Product</td>
+    <td>Price</td>
+    <td>Quantity</td>
+  </tr>
+  <tr>
+    <td>Apples</td>
+    <td>
+    	<table>
+        	<tr>
+            	<td id="applePrice">69</td>
+              <td>cents</td>
+        	</tr>
+        </table>
+    </td>
+    <td><input type="text" name="antallApples" id="antallApples" size="10"/></td>
+  </tr>
+  <tr>
+    <td>Oranges</td>
+    <td>
+    	<table>
+        	<tr>
+            	<td id="orangePrice">59</td>
+              <td>cents</td>
+        	</tr>
+        </table>
+    </td>
+    <td><input type="text" name="antallOranges" id="antallOranges" size="10"/></td>
+  </tr>
+  <tr>
+    <td>Bananas</td>
+    <td>
+    	<table>
+        	<tr>
+            	<td id="bananPrice">39</td>
+              <td>cents</td>
+        	</tr>
+        </table>
+    </td>
+    <td><input type="text" name="antallBananas" id="antallBananas" size="10"/></td>
+  </tr>
+</table>
+<table>
+    <tr>
+        <td>Total cost: <input type="text" id="totalCost" name="totalCost"/></td>
+    </tr>
+    <tr>
+      <td>
+              <label>
+                <input type="radio" name="paymentOption" value="Visa"> Visa
+              </label>
+              <label>
+                <input type="radio" name="paymentOption" value="Mastercard"> Mastercard
+              </label>
+              <label>
+                <input type="radio" name="paymentOption" value="Discover"> Discover
+              </label>
+            </td>
+    </tr>
+  </table>
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+document.getElementById("totalCost").addEventListener("focus", function (e) {
+      e.target.blur();
+    }, false);
+
+// Function to ckeck if value is an int
+  function isInt(value) {
+    return !isNaN(value) &&
+           parseInt(Number(value)) == value &&
+           !isNaN(parseInt(value, 10));
+  }
+
+// function to check if value is valid, and update total cost
+  function fruitHandler(e){
+    var value = e.target.value;
+      if (!isInt(value)){
+        document.getElementById("totalCost").value = "NaN";
+      }
+      else{
+        document.getElementById("totalCost").value =
+          (document.getElementById("applePrice").textContent * document.getElementById("antallApples").value +
+          document.getElementById("orangePrice").textContent * document.getElementById("antallOranges").value +
+          document.getElementById("bananPrice").textContent * document.getElementById("antallBananas").value) / 100;
+      }
+  }
+
+// function to check form before submitting
+  function submitHandler(e){
+    // check if username is valid
+    if(document.getElementById("username").value.length === 0){
+      alert("Input a username");
+      document.getElementById("username").focus();
+      e.preventDefault();
+      return false;
+    }
+    // check if apples is valid
+    if(document.getElementById("antallApples").value.length === 0){
+      alert("Input a valid number of apples");
+      document.getElementById("antallApples").focus();
+      e.preventDefault();
+      return false;
+    }
+    // check if oranges is valid
+    if(document.getElementById("antallOranges").value.length === 0){
+      alert("Input a valid number of oranges");
+      document.getElementById("antallOranges").focus();
+      e.preventDefault();
+      return false;
+    }
+    // check if bananas is valid
+    if(document.getElementById("antallBananas").value.length === 0){
+      alert("Input a valid number of bananas");
+      document.getElementById("antallBananas").focus();
+      e.preventDefault();
+      return false;
+    }
+    // check if paymentoption is valid
+    if(!document.querySelector('input[name="paymentOption"]:checked')){
+      alert("Select a payment option");
+      e.preventDefault();
+      return false;
+    }
+  }
+
+// Set eventListeners
+  document.getElementById("antallApples").addEventListener("keyup", fruitHandler, false);
+  document.getElementById("antallOranges").addEventListener("keyup", fruitHandler, false);
+  document.getElementById("antallBananas").addEventListener("keyup", fruitHandler, false);
+  document.getElementById("form").addEventListener("submit", submitHandler, false);
+</script>
+</body>
+</html>
