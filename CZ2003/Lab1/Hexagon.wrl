@@ -1,0 +1,64 @@
+#VRML V2.0 utf8
+#polygon mesh example: hexagon
+
+Background {skyColor 0 0 1}
+
+
+Shape {
+	appearance Appearance{
+		material Material { 
+			diffuseColor     1 0 0   #red=1, green=0, blue=0
+			specularColor    1 1 1	 #red=1, green=1, blue=1
+			transparency 0   # try values between 0 and 1
+			shininess 1      # shiny surface, try values between 0 and 1
+			}
+		}
+	geometry IndexedFaceSet {
+		coord Coordinate {
+                    point [
+				# bottom vertices
+				0.0    0.0   0.0,	#vertex 0
+				1.0    0.0   0.0,	#vertex 1
+				2.0    1.0   0.0,	#vertex 2
+				2.0    2.0   0.0,	#vertex 3
+				1.0    3.0   0.0,	#vertex 4
+				0.0    3.0   0.0,	#vertex 5
+			   -1.0    2.0   0.0,	#vertex 6
+			   -1.0    1.0   0.0	#vertex 7
+
+			   # top vertices
+				0.0    0.0   -3.0,	#vertex 8
+				1.0    0.0   -3.0,	#vertex 9
+				2.0    1.0   -3.0,	#vertex 10
+				2.0    2.0   -3.0,	#vertex 11
+				1.0    3.0   -3.0,	#vertex 12
+				0.0    3.0   -3.0,	#vertex 13
+			   -1.0    2.0   -3.0,	#vertex 14
+			   -1.0    1.0   -3.0	#vertex 15
+                    ]
+                }
+		coordIndex [
+			 #hexagon bottom
+			 0,  1,  2,	 3,  4,  5,  6,  7  -1,
+			 #hexagon top
+			 15,  14,  13,	 12,  11,  10,  9,  8  -1,
+			 #square 1
+			 0,  8,  9,  1  -1,
+			 #square 2
+			1,  9,  10,  2  -1,
+			 #square 3
+			 2,  10,  11,  3  -1,
+			 #square 4
+			 3,  11,  12,  4  -1,
+			 #square 5
+			 4,  12,  13,  5  -1,
+			 #square 6
+			 5,  13,  14,  6  -1,
+			 #square 7
+			 6,  14,  15,  7  -1,
+			 #square 8
+			 7,  15,  8,  0  -1,
+			]
+			
+	}
+}
