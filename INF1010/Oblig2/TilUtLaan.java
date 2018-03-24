@@ -1,10 +1,7 @@
-interface TilUtLaan{
+interface TilUtLaan {
+    String utlaanTil = "";
 
-  String utlaanTil = "";
+    public void laanUt(String navn);
 
-  public void laanUt(String navn);
-  public void bokTilbake();
-
-
-
+    public void bokTilbake();
 }

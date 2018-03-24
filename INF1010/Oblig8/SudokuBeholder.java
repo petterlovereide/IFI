@@ -1,23 +1,21 @@
 import java.util.*;
 
-class SudokuBeholder{
+class SudokuBeholder {
+    int antallLosninger = 0;
+    LenkeListe<Integer[]> array = new LenkeListe<>();
 
-int antallLosninger = 0;
+    public void settInn(Integer[] a) {
+        if (antallLosninger < 3500) {
+            array.add(a);
+        }
+        antallLosninger++;
+    }
 
-LenkeListe<Integer[]> array = new LenkeListe<>();
+    public Integer[] taUt() {
+        return array.remove();
+    }
 
-//ArrayList<Integer[]> array = new ArrayList<>();
-
-public void settInn(Integer[] a){
-  if(antallLosninger < 3500){
-    array.add(a);
-  }
-  antallLosninger++;
-}
-public Integer[] taUt(){
-  return array.remove();
-}
-public int hentAntallLosninger(){
-  return antallLosninger;
-}
+    public int hentAntallLosninger() {
+        return antallLosninger;
+    }
 }

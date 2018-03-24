@@ -1,27 +1,25 @@
-class LenkeListe<T>{
+class LenkeListe<T> {
+    Node lh = null;
 
-  Node lh = null;
+    class Node {
+        Node neste = null;
+        T data;
 
-  class Node{
-    Node neste = null;
-    T data;
-
-    public Node(T data){
-      this.data = data;
-      neste = lh;
-      lh = this;
+        public Node(T data) {
+            this.data = data;
+            neste = lh;
+            lh = this;
+        }
     }
-  }
 
-  public void add(T data){
-    Node mid = new Node(data);
-  }
+    public void add(T data) {
+        Node mid = new Node(data);
+    }
 
-  public T remove(){
-    Node mid = lh;
-    lh = lh.neste;
+    public T remove() {
+        Node mid = lh;
+        lh = lh.neste;
 
-    return mid.data;
-  }
-
+        return mid.data;
+    }
 }

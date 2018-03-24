@@ -1,5 +1,4 @@
-interface AbstraktSortertEnkelListe<T>{
-
+interface AbstraktSortertEnkelListe<T> {
     public void settInnForan(T data);
 
     public T getData(String key);
@@ -9,6 +8,4 @@ interface AbstraktSortertEnkelListe<T>{
     public T taUtForan();
 
     public void skrivRek();
-
-
 }

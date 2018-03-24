@@ -1,14 +1,14 @@
-class Resept{
-  private int reseptNummer;
-  private Legemiddel legemiddel;
-  private String navnLege;
-  private String navnPasient;
+class Resept {
+    private int reseptNummer;
+    private Legemiddel legemiddel;
+    private String navnLege;
+    private String navnPasient;
 
-  public Resept(int reseptNummer){
-    this.reseptNummer = reseptNummer;
-  }
+    public Resept(int reseptNummer) {
+        this.reseptNummer = reseptNummer;
+    }
 
-  public int getReseptNummer(){
-    return reseptNummer;
-  }
+    public int getReseptNummer() {
+        return reseptNummer;
+    }
 }

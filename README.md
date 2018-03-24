@@ -1,9 +1,11 @@
 # UiO / IFI
+* INF1000 - Grunnkurs i objektorientert programmering
 * INF1010 - Objektorientert programmering
 * INF1060 - Introduksjon til operativsystemer og datakommunikasjon
 * INF1300 - Introduksjon til databaser
 * INF2220 - Algoritmer og datastrukturer
 * INF2270 - Datamaskinarkitektur
+* INF2810 - Funksjonell programmering
 * INF3121 - Testing av programvare
 # NTU / SCSE
 * CZ2003 - Computer Graphics and Visualisation

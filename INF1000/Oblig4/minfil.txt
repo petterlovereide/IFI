@@ -1,0 +1,84 @@
+Aalborg
+Aberdeen
+Agadir
+Alanya
+Alicante
+Amsterdam
+Antalya
+Athen
+Bangkok
+Barcelona
+Beograd
+Berlin
+Billund
+Brussel
+Budapest
+Burgas
+Chania
+Doha
+Dubai
+Dublin
+Dubrovnik
+Düsseldorf
+Edinburgh
+Faro
+Miami
+Frankfurt
+Fuerteventura
+Funchal
+Gdansk
+Geneve
+Gran Canaria
+Göteborg
+Hamburg
+Helsinki
+Islamabad
+Istanbul
+Krakow
+København
+Lahore
+Lanzarote
+Larnaca
+Lisboa
+London
+Los Angeles
+Madrid
+Malaga
+Malta
+Manchester
+Marrakech
+Milano
+Moskva
+Murcia
+München
+New York
+Nice
+San Francisco
+Orlando
+Palanga
+Mallorca
+Paris
+Pisa
+Praha
+Pristina
+Pula
+Reykjavik
+Riga
+Roma
+Salzburg
+San Juan
+Santorini
+Sarajevo
+Sharm el Sheik
+Split
+St. Petersburg
+Stockholm
+Szczecin
+Tallinn
+Tenerife
+Venezia
+Vilnius
+Warszawa
+Wien
+Zürich
+Århus

@@ -1,3 +1,3 @@
-class LegemiddelTypeC extends Legemiddel{
-  
+class LegemiddelTypeC extends Legemiddel {
+
 }

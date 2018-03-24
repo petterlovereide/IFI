@@ -1,0 +1,9 @@
+Test 1: needle1 in hasyatck1. 0(cog), 8(cag)
+
+Test2: needle2 in haystack1. 6(ac)
+
+Test3: needle3 in haystack2. 4(det), 31(det), 48(det), 71(det)
+
+Test4: needle4 in haystack1. 0(cog), 3(wrg), 8(cag) 
+
+Test5: needle5 in haystack1. 3(wrg)

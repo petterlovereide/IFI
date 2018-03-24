@@ -1,3 +1,3 @@
-interface ComparableInterface<E>{
-  int compareTo(E data);
+interface ComparableInterface<E> {
+    int compareTo(E data);
 }

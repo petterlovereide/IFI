@@ -1,4 +1,5 @@
-interface Lik{
-  private String avtaleNummer;
-  public Boolean samme(String s);
+interface Lik {
+    private String avtaleNummer;
+
+    public Boolean samme(String s);
 }

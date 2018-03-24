@@ -1,3 +1,3 @@
-interface Piller{
-  private int antallPiller;
+interface Piller {
+    private int antallPiller;
 }

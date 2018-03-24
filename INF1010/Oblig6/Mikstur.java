@@ -1,4 +1,4 @@
-interface Mikstur{
-  private int mengdeCM3;
-  private int styrkePerMengde;
+interface Mikstur {
+    private int mengdeCM3;
+    private int styrkePerMengde;
 }

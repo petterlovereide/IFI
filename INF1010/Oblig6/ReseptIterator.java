@@ -1,6 +1,2 @@
-class ReseptIterator implements Iterator{
-
-
-
-
+class ReseptIterator implements Iterator {
 }
